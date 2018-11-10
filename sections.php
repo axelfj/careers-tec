@@ -119,6 +119,8 @@
                         <th>Nombre Sección</th>
                         <th>Editar</th>
                         <th>Borrar</th>
+                        <th>Ver Subsecciones</th>
+                        <th>Agregar Subsecciones</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -130,6 +132,9 @@
                         <td> <?php  echo $fila["name"]?> </td>
                         <td><a href= "editSection.php?id=<?php echo $id?>&idSection=<?php echo $fila["idSection"]?>&name=<?php echo $name?>&nameSection=<?php echo $fila["name"]?>"><center><input type=image src="buttons/editb.png" width="35" height="35"></center></a></td>
                         <td><a><center><input type=image src="buttons/erase.png" width="35" height="35" data-toggle="modal" data-target="#eraseModal"></center></a></td>
+                        <td><a href= "subsections.php?id=<?php echo $id = $_GET["id"]?>&name=<?php echo $name = $_GET["name"]?>&idSection=<?php echo $fila["idSection"]?>&nameSection=<?php echo $fila["name"]?>"><center><input type=image src="buttons/eye.png" width="35" height="35"></center></a></td>
+
+                        <td><a href= "addSubsection.php?id=<?php echo $id = $_GET["id"]?>&name=<?php echo $name = $_GET["name"]?>&idSection=<?php echo $fila["idSection"]?>&nameSection=<?php echo $fila["name"]?>"><center><input type=image src="buttons/add.jpg" width="35" height="35"></center></a></td>
                     </tr>
 
                     <?php
