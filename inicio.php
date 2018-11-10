@@ -57,27 +57,27 @@
 
     <div id="wrapper">
 
-      <!-- Sidebar -->
-      <ul class="sidebar navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="inicio.php">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Información General</span>
-          </a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fas fa-fw fa-folder"></i>
-            <span>Carreras</span>
-          </a>
-          <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <h6 class="dropdown-header">Opciones de desarrollo:</h6>
-            <a class="dropdown-item" href="register.php">Registrar Carrera</a>
-            <a class="dropdown-item" href="edit.php">Editar Carrera</a>
-            <a class="dropdown-item" href="erase.php">Borrar Carrera</a>
-          </div>
-        </li>
-      </ul>
+        <!-- Sidebar -->
+        <ul class="sidebar navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="inicio.php">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Información General</span>
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Carreras</span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                    <h6 class="dropdown-header">Opciones:</h6>
+                    <a class="dropdown-item" href="register.php">Registrar Carrera</a>
+                    <a class="dropdown-item" href="edit.php">Editar Carrera</a>
+                    <a class="dropdown-item" href="erase.php">Borrar Carrera</a>
+                </div>
+            </li>
+        </ul>
 
       <div id="content-wrapper">
 
