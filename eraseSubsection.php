@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/security.php'; security_confirm_delete(); ?>
 <?php
 
 

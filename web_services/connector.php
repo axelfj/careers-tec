@@ -1,28 +1,10 @@
 <?php
-	
-	//Database user connection, set with UTF-8 to allow accented characters
-	function request_connection()
-	{
-		$server = "us-cdbr-iron-east-01.cleardb.net";
-		//$user = "AMCareerUser";
-		$user = "bd5a77700870d2";
-		//$password = getenv('DB_PASSWORD');
-		$password = getenv('DB_PASSWORD');
-		//$database = "AMCareerDB";
-		$database = "heroku_f6e6709b7355dc5";
-		$conn = mysqli_connect($server, $user, $password, $database);
-		mysqli_query($conn,"SET NAMES 'utf8'");
-		
-		if(!$conn->errno)
-		{
-			return $conn;
-		}			
-		return;
-	}
-	
-	//Closes database connection, call this when finished using connection
-	function close_connection($conn)
-	{
-		mysqli_close($conn);
-	}
-?>
+function request_connection() {
+    $host = getenv('CAREERS_DB_HOST'); $user = getenv('CAREERS_DB_USER');
+    $password = getenv('CAREERS_DB_PASSWORD'); $database = getenv('CAREERS_DB_NAME');
+    if (!$host || !$user || !$password || !$database) throw new RuntimeException('Database environment configuration is required');
+    $conn = new mysqli($host, $user, $password, $database);
+    $conn->set_charset('utf8mb4');
+    return $conn;
+}
+function close_connection($conn) { mysqli_close($conn); }
