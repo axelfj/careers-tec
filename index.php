@@ -1,6 +1,7 @@
+<?php require_once __DIR__ . '/security.php'; ?>
 <?php
 /* Se inicia la sesión */
-session_start();
+
 
 /* Se selecciona uno u otro según sea el caso */
 if (empty($_SESSION['k_username'])) {
