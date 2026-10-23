@@ -6,7 +6,6 @@
 		$server = "us-cdbr-iron-east-01.cleardb.net";
 		//$user = "AMCareerUser";
 		$user = "bd5a77700870d2";
-		//$password = getenv('DB_PASSWORD');
 		$password = getenv('DB_PASSWORD');
 		//$database = "AMCareerDB";
 		$database = "heroku_f6e6709b7355dc5";
